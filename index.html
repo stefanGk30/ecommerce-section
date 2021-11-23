@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar section-center mobile-center">
+        <button class="btn bars-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <img src="./images/logo.svg" alt="" class="logo" />
+
+        <div class="links">
+          <ul class="desktop-links">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#"> Contact</a></li>
+          </ul>
+        </div>
+        <div class="login-cart">
+          <button class="cart-btn btn">
+            <span class="amount">0</span>
+            <img src="./images/icon-cart.svg" alt="" class="cart-img" />
+          </button>
+          <img src="./images/image-avatar.png" alt="" class="avatar" />
+        </div>
+      </nav>
+    </header>
+    <!-- side menu -->
+    <div class="side-menu-container">
+      <aside class="side-menu">
+        <button class="btn close-side-menu">
+          <img src="./images/icon-close.svg" alt="" class="close-btn" />
+        </button>
+        <ul class="side-menu-links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#"> Contact</a></li>
+        </ul>
+      </aside>
+    </div>
+    <!-- main section -->
+    <section>
+      <div class="main-container section-center">
+        <!-- product section -->
+        <!--  -->
+        <!-- desktop version-->
+        <div class="product-desktop">
+          <div class="main-image">
+            <img
+              src="./images/image-product-1.jpg"
+              class="main-img img"
+              data-id="1"
+            />
+          </div>
+          <ul class="preview-images">
+            <li class="prev-img-container active">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                class="preview-img img"
+                data-id="1"
+              />
+            </li>
+            <li class="prev-img-container">
+              <img
+                src="./images/image-product-2-thumbnail.jpg"
+                class="preview-img img"
+                data-id="2"
+              />
+            </li>
+            <li class="prev-img-container">
+              <img
+                src="./images/image-product-3-thumbnail.jpg"
+                class="preview-img img"
+                data-id="3"
+              />
+            </li>
+            <li class="prev-img-container">
+              <img
+                src="./images/image-product-4-thumbnail.jpg"
+                class="preview-img img"
+                data-id="4"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <!-- mobile product section-->
+        <div class="product-mobile">
+          <div class="mobile-images">
+            <img src="./images/image-product-1.jpg" class="mob-img img" />
+            <img src="./images/image-product-2.jpg" class="mob-img img" />
+            <img src="./images/image-product-3.jpg" class="mob-img img" />
+            <img src="./images/image-product-4.jpg" class="mob-img img" />
+            <button class="prev-btn btn">
+              <img src="./images/icon-previous.svg" alt="" />
+            </button>
+            <button class="next-btn btn">
+              <img src="./images/icon-next.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- info and details section -->
+        <div class="mobile-center">
+          <div class="info">
+            <h3 class="company-name">Sneaker Company</h3>
+            <h2 class="product-name">
+              Fall Limited Edition <br />
+              Sneakers
+            </h2>
+            <p class="product-desc">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="prices-container">
+              <p class="product-price">
+                $125.00<span class="discount">50%</span>
+              </p>
+              <p class="original-price">$250.00</p>
+            </div>
+            <div class="btns-container">
+              <div class="amount-btn">
+                <button class="dec-btn btn">
+                  <img src="./images/icon-minus.svg" alt="" class="dec-img" />
+                </button>
+
+                <p class="product-amount">0</p>
+
+                <button class="inc-btn btn">
+                  <img src="./images/icon-plus.svg" alt="" class="inc-img" />
+                </button>
+              </div>
+              <button class="btn add-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- cart -->
+        <div class="cart">
+          <div class="cart-title">
+            <h3>Cart</h3>
+          </div>
+          <div class="cart-product">
+            <h3>Cart is empty.</h3>
+          </div>
+          <button class="btn checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </section>
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-wrapper">
+        <button class="modal-close-btn btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- main modal img -->
+        <div class="modal-main-img">
+          <div class="modal-img-wrapper">
+            <img src="./images/image-product-1.jpg" class="img main-modal" />
+          </div>
+          <button class="modal-prev-btn btn">
+            <img src="./images/icon-previous.svg" />
+          </button>
+          <button class="modal-next-btn btn">
+            <img src="./images/icon-next.svg" />
+          </button>
+        </div>
+        <!-- modal preview images -->
+        <div class="modal-preview-imgs">
+          <div class="modal-preview-image-wrapper">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              class="img modal-preview-img"
+              data-id="1"
+            />
+          </div>
+          <div class="modal-preview-image-wrapper">
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              class="img modal-preview-img"
+              data-id="2"
+            />
+          </div>
+          <div class="modal-preview-image-wrapper">
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              class="img modal-preview-img"
+              data-id="3"
+            />
+          </div>
+          <div class="modal-preview-image-wrapper">
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              class="img modal-preview-img"
+              data-id="4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
